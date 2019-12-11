@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>CocoLab Awesome Profile Cards</title>
+        <link rel="icon" href="./catrina.png"
+        />
+        <link rel="stylesheet" href="./assets/css/main.css" />
+        <script src="https://kit.fontawesome.com/1916f943e3.js" crossorigin="anonymous"></script>
+    </head>
+    
+    <body>
+        <div class="page">
+            <header class="header">
+                <div class="header__wrapper"> <a href="./index.html">
+            <img src="./assets/images/awesome-cards (1).png" alt="Inicio" class="header__image">
+        </a>
+
+                </div>
+            </header>
+            <main class="main">
+                <section class="page__cardpreview">
+                    <div class="card__preview">
+                        <div class="card__box">
+                            <button class="card__reset"><i class="far fa-trash-alt"></i>Reset</button>
+                            <div class="card__box--header">
+                                <div class="card__box--text">
+                                     <h3 class="card__name">Nombre Apellido</h3>
+
+                                    <p class="card__job-title">Front-end developer</p>
+                                </div>
+                            </div>
+                            <div class="card__photo js__profile-image"></div>
+                            <ul class="card__list">
+                                <li class="card__list--email item hidden"> <a class="card__list--icon-mail">
+                        <i class="far fa-envelope image"></i>
+                    </a>
+
+                                </li>
+                                <li class="card__list--phone item hidden"> <a href="" class="card__list--icon-phone">
+                        <i class="fas fa-mobile-alt image"></i>
+                    </a>
+
+                                </li>
+                                <li class="card__list--linkedin item hidden"> <a href="" target="__blank" class="card__list--icon-linkedin">
+                        <i class="fab fa-linkedin-in image"></i>
+                    </a>
+
+                                </li>
+                                <li class="card__list--github item hidden"> <a href="" target="__blank" class="card__list--icon-github">
+                        <i class="fab fa-github-alt image"></i>
+                    </a>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <form class="form" action="" method="POST">
+                    <fieldset id="form_desing" class="form__design collapsible">
+                        <div class="form__desing--title collapsible-header">
+                            <div class="form__contain--title"> <i class="form__img far fa-object-ungroup"></i>
+
+                                 <h3 class="form__title">diseña</h3>
+
+                            </div> <i class="fas fa-chevron-down design__img-arrow click-arrow" id="arrow-design"></i>
+
+                        </div>
+                        <div class="palette__container collapsible-container" id="first-form">
+                            <p>colores</p>
+                            <div class="color_selected">
+                                <div class="palette">
+                                    <label for="colorpalette4"></label>
+                                    <input class="form-item" id="colorpalette4" type="radio" value="4"
+                                    name="palette" />
+                                    <div class="palette__color--general">
+                                        <div class="palette__color coco1"></div>
+                                        <div class="palette__color coco2"></div>
+                                        <div class="palette__color coco3"></div>
+                                    </div>
+                                </div>
+                                <div class="palette">
+                                    <label for="colorpalette1"></label>
+                                    <input class="form-item" id="colorpalette1" type="radio" value="1"
+                                    name="palette" />
+                                    <div class="palette__color--general">
+                                        <div class="palette__color blue1"></div>
+                                        <div class="palette__color blue2"></div>
+                                        <div class="palette__color blue3"></div>
+                                    </div>
+                                </div>
+                                <div class="palette">
+                                    <label for="colorpalette2"></label>
+                                    <input class="form-item" id="colorpalette2" type="radio" value="2"
+                                    name="palette" />
+                                    <div class="palette__color--general">
+                                        <div class="palette__color red1"></div>
+                                        <div class="palette__color red2"></div>
+                                        <div class="palette__color red3"></div>
+                                    </div>
+                                </div>
+                                <div class="palette">
+                                    <label for="colorpalette3"></label>
+                                    <input class="form-item" id="colorpalette3" type="radio" value="3"
+                                    name="palette" />
+                                    <div class="palette__color--general">
+                                        <div class="palette__color yellow1"></div>
+                                        <div class="palette__color yellow2"></div>
+                                        <div class="palette__color yellow3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset id="form__fill" class="form__fill collapsible">
+                        <div class="fill--title collapsible-header">
+                            <div class="contain-title"> <i class="far fa-keyboard"></i>
+
+                                 <h3 class="title__h3">rellena</h3>
+
+                            </div> <i class="fas fa-chevron-down click-arrow" id="arrow-fill"></i>
+
+                        </div>
+                        <div class="collapsible-container" id="second-form">
+                            <div class="fill--inputs">
+                                <label class="label name" for="name">Nombre completo *</label>
+                                <input class="input able name" type="text" id="name"
+                                placeholder="Ej: Sally Jill" name="name">
+                                <label class="label position" for="position">Puesto *</label>
+                                <input class="input able position" type="text" id="position"
+                                placeholder="Ej: Front-end" name="job">
+                                <div class="button-image">
+                                    <label class="label img" for="image">Imagen de perfil</label>
+                                    <button class="btn js__profile-trigger" type="button"
+                                    id="upload-image">Añadir imagen</button>
+                                    <input type="file" name="photo" id="img-selector"
+                                    class="btn action__hiddenField js__profile-upload-btn">
+                                    <div class="square js__profile-preview"></div>
+                                </div>
+                                <label class="label email" for="email">Email *</label>
+                                <input class="input able email" type="email" id="email"
+                                placeholder="Ej:sally-hill@gmail.com" name="email">
+                                <label class="label phone" for="phone">Teléfono</label>
+                                <input class="input able phone" type="number" pattern=""
+                                id="phone" placeholder="Ej:555-55-55-55">
+                                <label class="label linkedin" for="linkedin">Linkedin *</label>
+                                <input class="input able linkedin" type="url" id="linkedin"
+                                placeholder="Ej: sally.hill" name="linkedin" required>
+                                <label class="label github" for="git">Github *</label>
+                                <input class="input able github" type="text" id="git"
+                                placeholder="Ej:sally-hill" name="github">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="form__share collapsible">
+                        <div class="form__share--container collapsible-header">
+                            <div class="form__share--tittle"> <i class="fas fa-share-alt"></i>
+
+                                 <h3 class="form__share--text">comparte</h3>
+
+                            </div> <i class="fas fa-chevron-down click-arrow" id="arrow-share"></i>
+
+                        </div>
+                        <div class="share__create collapsible-container" id="third-form">
+                            <button class="share__create--btn" type="button" id="share_btn"> <i class="far fa-address-card"></i>
+
+                                <p class="share__create--tittle btn">crear tarjeta</p>
+                            </button>
+                        </div>
+                        <div class="errorMessage"></div>
+                        <div class="form__create-link hidden" id="share-div">
+                            <div class="share__create-card">
+                                <p class="share__create-card--text">La tarjeta ha sido creada:</p>
+                            </div> <a href="" target="_blank" class="share__create-card--twitter"><i class="fab fa-twitter"></i>Compartir en twitter</a>
+
+                        </div>
+                    </fieldset>
+            </main>
+            <footer class="footer">
+                <p class="footer__copy">Awesome profile-cards @2019</p>
+                <img src="./assets/images/COCO.png" alt="CocoLab logo"
+                class="coco-logo"> <a href="https://adalab.es/" target="_blank" class="footer__link">
+        <img src="./assets/images/logo-adalab.png" alt="Adalab Logo" class="footer__logo"></a>
+
+            </footer>
+        </div>
+        <script src="assets/js/main.js"></script>
+    </body>
+
+</html>

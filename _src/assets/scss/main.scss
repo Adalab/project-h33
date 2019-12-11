@@ -1,0 +1,22 @@
+/* vendors*/
+@import 'vendors/normalize';
+
+/* core */
+@import 'core/variables';
+@import 'core/mixins';
+@import 'core/functions';
+@import 'core/palette-color-js';
+
+/*layout*/
+@import 'layout/base';
+@import 'layout/header';
+@import 'layout/formdesign';
+@import 'layout/formshare';
+@import 'layout/footer';
+@import 'layout/cardpreview';
+
+/*pages*/
+@import 'pages/home';
+@import 'layout/formfill';
+
+
