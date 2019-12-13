@@ -10,9 +10,10 @@ const shareFormLink = document.querySelector('.share__create-card');
 
 function ValidateEmail() {
   if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(inputEmail.value)) {
-    return (true);
+    return true;
+  } else{
+  return false;
   }
-  return (false);
 }
 
 const validation = () => {
