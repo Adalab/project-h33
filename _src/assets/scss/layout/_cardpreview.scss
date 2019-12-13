@@ -1,8 +1,7 @@
 .page__cardpreview {
     height: 457px;
-    background-image: url('../images/fondo.png');
     background-size: cover;
-    //background: linear-gradient(to bottom, $color-silver, $color-pale-grey); (Fondo por defecto) 
+    background: linear-gradient(to bottom, $color-silver, $color-pale-grey); 
     display: flex;
     flex-direction: column;
     justify-content: center;
